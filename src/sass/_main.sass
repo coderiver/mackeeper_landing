@@ -1,1 +1,179 @@
 // Normally mainpage styles
+.header
+	position: relative
+	background: url(../img/header-bg.jpg) no-repeat center
+	background-size: cover
+	height: 441px
+	border-bottom: 1px solid #d1e4f3
+	.header__in
+		width: 960px
+		margin: auto
+		padding: 0 80px
+		+clr
+	.header__col
+		float: right
+		width: 440px
+		height: 440px
+.logo
+	display: inline-block
+	margin: 18px 0 0 93px
+.header__name
+	color: #333
+	font-family: "Open Sans"
+	font-size: 50px
+	font-weight: 300
+	text-shadow: -2px -2px 0 #b7eeff,2px -2px 0 #b7eeff,-2px 2px 0 #b7eeff,2px 2px 0 #b7eeff
+	span
+		font-weight: 600
+.header__sub
+	font-weight: 600
+	font-size: 14px
+	color: #333
+	margin: -7px 0 0 6px
+	text-shadow: -2px -2px 0 #b7eeff,2px -2px 0 #b7eeff,-2px 2px 0 #b7eeff,2px 2px 0 #b7eeff
+.header__list
+	position: relative
+	width: 210px
+	display: block
+	margin: 51px auto 0
+	padding-left: 12px
+	li
+		font-size: 15px
+		font-weight: 400
+		line-height: 20px
+		position: relative
+		padding-left: 27px
+		margin-bottom: 19px
+		&:before
+			content: ' '
+			position: absolute
+			+s(icon-check)
+			left: 0
+			top: 6px
+		a
+			color: #666
+.main
+	position: relative
+	.main__in
+		width: 958px
+		margin: auto
+		padding: 24px 0 44px
+	.title
+		margin: 0 0 33px
+.main__top
+	border-bottom: 1px solid #d1e4f3
+	padding: 0 0 52px
+.main__bottom
+	font-size: 0
+	position: relative
+	.col
+		display: inline-block
+		vertical-align: middle
+		text-align: center
+	.col2
+		width: 50%
+	.col1
+		width: 25%
+	.col3
+		width: 25%
+		padding: 26px 19px 0 0
+	.btn
+		margin-top: 44px
+.steps
+	position: relative
+	font-size: 0
+	.step
+		min-height: 142px
+		display: inline-block
+		vertical-align: top
+		width: 50%
+		position: relative
+		&.step_first
+			border-left: 1px solid #58d080
+			padding: 17px 40px 20px 215px
+			&:before
+				content: ''
+				position: absolute
+				+s(step1)
+				display: block
+				left: 41px
+				top: 50%
+				transform: translateY(-50%)
+			.step__title
+				color: #58d080
+		&.step_second
+			border-left: 1px solid #fb9253
+			padding: 17px 40px 10px 245px
+			&:before
+				content: ''
+				position: absolute
+				+s(step2)
+				display: block
+				left: 41px
+				top: 50%
+				transform: translateY(-50%)
+			.step__title
+				color: #fcb18a
+	.step__title
+		font-size: 32px
+		font-weight: 300
+		line-height: 1
+		margin-bottom: 4px
+	p, a
+		color: #979494
+		font-size: 18px
+		font-weight: 400
+		width: 100%
+		max-width: 190px
+		line-height: 1.5
+	a
+		text-decoration: none
+		&:hover
+			text-decoration: underline
+.line
+	border-top: 1px solid #e1e3e4
+	border-bottom: 1px solid #e1e3e4
+	background-color: #fafdff
+.nav
+	position: relative
+	height: 52px
+	line-height: 52px
+	text-align: center
+	a
+		display: inline-block
+		color: #171717
+		font-family: "Open Sans"
+		font-size: 11px
+		font-weight: 400
+		line-height: 1
+		margin: 0 14px
+		&:hover
+			text-decoration: underline
+.footer
+	position: relative
+	text-align: center
+	.footer__in
+		width: 568px
+		margin: auto
+		padding: 14px 0 32px
+.footer__text
+	font-size: 11px
+	font-weight: 400
+	line-height: 20px
+	color: #4f4f4f
+	a
+		color: #17b5fe
+		text-decoration: underline
+		position: relative
+		&:after
+			content: ">"
+			display: inline-block
+			vertical-align: middle
+			margin-left: 3px
+		&:hover
+			text-decoration: none
+.copyright
+	color: #999
+	font-size: 11px
+	font-weight: 400
+	margin-top: 15px
