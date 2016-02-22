@@ -47,7 +47,7 @@ strong { font-weight: 700; }
 .btn span { vertical-align: middle; }
 
 .btn_orange { background-image: -webkit-gradient(linear, left bottom, left top, from(#ff940a), to(#ffa800)); background-image: -webkit-linear-gradient(bottom, #ff940a 0%, #ffa800 100%); background-image: linear-gradient(to top, #ff940a 0%, #ffa800 100%); border-bottom: 3px solid #ff7200; }
-.btn_orange:hover { background-image: -webkit-gradient(linear, left bottom, left top, from(#ffab3e), to(#ffbd3d)); background-image: -webkit-linear-gradient(bottom, #ffab3e 0%, #ffbd3d 100%); background-image: linear-gradient(to top, #ffab3e 0%, #ffbd3d 100%); border-bottom: none; }
+.btn_orange:hover { background-image: -webkit-gradient(linear, left bottom, left top, from(#ffab3e), to(#ffbd3d)); background-image: -webkit-linear-gradient(bottom, #ffab3e 0%, #ffbd3d 100%); background-image: linear-gradient(to top, #ffab3e 0%, #ffbd3d 100%); border-bottom-color: #FFAB3E; }
 
 .btn__under { padding-top: 5px; text-align: center; }
 
