@@ -22,7 +22,7 @@ gulp.task('sass', function() {
         })
     ];
 
-    return sass(config.src.sass+'*.sass', {
+    return sass(config.src.sass+'*.scss', {
         sourcemap: true,
         style: 'compact',
         emitCompileError: true

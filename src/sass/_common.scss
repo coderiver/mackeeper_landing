@@ -1,0 +1,155 @@
+// # SHORT HOWTO
+// ## Sprites
+//		 .whatever
+// 			+s(codedby)
+// ## gradient example
+//		 	+g(#232323, #5c5c5c);
+//		 horizontal
+//		 	+gh(#232323, #5c5c5c);
+// ## making bw-images
+//		 img
+//			@extend %gray
+// ## predefined media-queries: https://github.com/paranoida/sass-mediaqueries
+//		 +r(320)
+//			display: none
+// +max-screen(1000), +iphone5, +iphone4, +ipad-retina, +ipad, +hdpi - also available
+//
+// ## use cycles
+//		 @for $i from 1 through 3
+//			 .item-#{$i}
+//			width: 2em * $i;
+//		 @each $s in a,b,c
+// 				#{$s}
+//				display: none
+// ## fonts
+// Save fonts to /src/fonts
+// +font(book, cytiapro-black-webfont)
+// and create mixin
+// =book
+// 	font-family: "book", Arial, sans-serif
+
+body {
+	font-family: "Open Sans", sans-serif;
+	font-size: 12px;
+	line-height: 1.2;
+}
+
+a {
+	text-decoration: none;
+}
+
+strong {
+	font-weight: 700;
+}
+
+// common blocks
+//fonts
+@include font("lucida-grande-regular", "lucida-grande-regular");
+
+@mixin lucida {
+	font-family: "lucida-grande-regular", sans-serif;
+}
+
+//icons
+[class*="icon"],
+[class^="icon"] {
+	display: inline-block;
+}
+
+.icon-download {
+	@include s(icon-download);
+}
+
+//buttons
+.btn {
+	width: 400px;
+	height: 82px;
+	line-height: 82px;
+	text-align: center;
+	border-radius: 4px;
+	display: inline-block;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.26);
+	color: white;
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: uppercase;
+	position: relative;
+	margin: 22px auto 0;
+	display: block;
+	.icon-download {
+	position: absolute;
+	right: 19px;
+	top: 50%;
+	transform: translateY(-50%);
+	}
+	span {
+	vertical-align: middle;
+	}
+}
+
+.btn_orange {
+	background-color: #ffa800;
+	background-image: linear-gradient(to top, #ff940a 0%, #ffa800 100%);
+	border-bottom: 3px solid #ff7200;
+	&:hover {
+	background-color: #ffbd3d;
+	background-image: linear-gradient(to top, #ffab3e 0%, #ffbd3d 100%);
+	border-bottom-color: #ffab3e;
+	}
+}
+
+.btn__under {
+	padding-top: 5px;
+	text-align: center;
+}
+
+.link {
+	font-family: "Open Sans";
+	font-size: 13px;
+	line-height: 1;
+	text-decoration: underline;
+	&.link_orange {
+	color: #ff950a;
+	}
+	&:hover {
+	text-decoration: none;
+	}
+}
+
+.title {
+	color: #333333;
+	font-size: 32px;
+	font-weight: 300;
+	text-align: center;
+}
+
+.text {
+	width: 155px;
+	color: #393939;
+	font-family: Arial;
+	font-size: 13px;
+	display: inline-block;
+	padding-top: 20px;
+}
+
+.stars {
+	@include lucida;
+	color: #464646;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 16px;
+	text-align: center;
+	padding-top: 58px;
+	position: relative;
+	max-width: 135px;
+	margin: auto;
+	&:before {
+	content: " ";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	@include s(stars);
+	}
+}
