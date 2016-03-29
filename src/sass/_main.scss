@@ -1,8 +1,10 @@
 // Normally mainpage styles
+.header-wrp {
+	background: url(../img/gradient.jpg) repeat center;
+}
 .header {
 	position: relative;
 	background: url(../img/header-bg.jpg) no-repeat center;
-	background-size: cover;
 	height: 441px;
 	border-bottom: 1px solid #d1e4f3;
 	.header__in {
